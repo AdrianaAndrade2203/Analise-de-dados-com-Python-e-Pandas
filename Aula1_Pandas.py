@@ -13,7 +13,8 @@
 import pandas as pd
 
 #para ler um  arquivo em CSV
-df = pd.read_csv("Gapminder.csv",error_bad_lines = False, sep=";")
+df = pd.read_csv("C:\workspace\Analise de dados com Python e Pandas\Arquivos\Gapminder.csv",
+error_bad_lines = False, sep=";")
 
 #para visualizar as 10 primeiras linhas dos arquivos. Caso nada seja digitado entre parenteses por Default, 
 #serão apresentadas as 5 primeiras linhas

@@ -1,10 +1,16 @@
+
 import pandas as pd
 
-df1 = pd.read_excel("Aracaju.xlsx")
-df2 = pd.read_excel("Fortaleza.xlsx")
-df3 = pd.read_excel("Natal.xlsx")
-df4 = pd.read_excel("Recife.xlsx")
-df5 = pd.read_excel("Salvador.xlsx")
+import os
+for f in os.listdir("C:\workspace\Analise de dados com Python e Pandas\Arquivos"):
+	print(f)
+
+df1 = pd.read_excel("C:\workspace\Analise de dados com Python e Pandas\Arquivos\_Aracaju.xlsx")
+df2 = pd.read_excel("C:\workspace\Analise de dados com Python e Pandas\Arquivos\Fortaleza.xlsx")
+df3 = pd.read_excel("C:\workspace\Analise de dados com Python e Pandas\Arquivos\_Natal.xlsx")
+df4 = pd.read_excel("C:\workspace\Analise de dados com Python e Pandas\Arquivos\Recife.xlsx")
+df5 = pd.read_excel("C:\workspace\Analise de dados com Python e Pandas\Arquivos\Salvador.xlsx")
+
 
 print(df1.head())
 print(df2.head())
